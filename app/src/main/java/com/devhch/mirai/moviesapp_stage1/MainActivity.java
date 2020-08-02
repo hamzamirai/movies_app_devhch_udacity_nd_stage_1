@@ -41,7 +41,8 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String KEY_API = "6bd8b1776c397c35643918b3cc9c129f";
+    // Get YOur API KEY from themoviedb.org
+    private final String KEY_API = "";
 
     private RecyclerView recyclerView;
     private MoviesAdapter adapter;
