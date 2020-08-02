@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    android:id="@+id/relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        android:paddingTop="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"/>
+
+    <TextView
+        android:textColor="@color/text_color"
+        android:layout_below="@id/tv_welcome"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:id="@+id/tv_see_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What would you like\nto see toady?"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout"
+       android:layout_below="@id/tv_see_today"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:showIn="@layout/activity_main"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"/>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:padding="@dimen/layout_padding"
+        android:textColor="@color/colorAccent"
+        android:text="@string/no_internet_connection"
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+</RelativeLayout>

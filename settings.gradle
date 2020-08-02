@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "movies_app_miraidev_ud_nd_stage_1"

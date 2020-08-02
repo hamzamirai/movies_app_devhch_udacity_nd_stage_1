@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movies App</string>
+    <string name="action_settings">Settings</string>
+    <string name="name_movie">Movie Title :</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="rating">User Rating :</string>
+    <string name="release">Release day :</string>
+    <string name="pref_sort_order_label">Sort Order</string>
+    <string name="pref_sort_order_key">sortOrder</string>
+    <string name="pref_most_popular">Most Popular</string>
+    <string name="pref_top_rated">Top Rated</string>
+    <string name="plotsynopsis">Plot Synopsis :</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="pref_summary">Choose an order to sort.</string>
+    <string name="pref_sort_by_title">Sort By:</string>
+</resources>
